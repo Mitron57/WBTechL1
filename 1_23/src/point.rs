@@ -14,4 +14,20 @@ impl Point {
         let dy = (self.y - p.y).abs();
         (dx * dx + dy * dy).sqrt()
     }
+
+    pub fn x(&self) -> f64 {
+        self.x
+    }
+
+    pub fn y(&self) -> f64 {
+        self.y
+    }
+
+    pub fn set_x(&mut self, x: f64) {
+        self.x = x;
+    }
+
+    pub fn set_y(&mut self, y: f64) {
+        self.y = y;
+    }
 }
