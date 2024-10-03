@@ -1,0 +1,10 @@
+[package]
+name = "L1_5"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.40.0", features = ["signal", "macros", "rt-multi-thread", "time", "tracing"] }
+tokio-util = "0.7.12"
+flume = { version = "0.11.0", features = ["async"] }
+console-subscriber = "0.4.0"
